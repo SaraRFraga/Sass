@@ -1,0 +1,12 @@
+//Aunque los enlaces son display: inline por defecto, al añadir display: block; se les permite tener márgenes superior e inferior.
+//Cambiando a display: block, lo que les permite tener márgenes superior e inferior, algo que no es posible con display: inline.
+
+.texto-entrada {
+    a {
+        color: $negro;
+        margin-top: 2rem;
+        display: block;
+        @include tablet {
+            margin-top: 0;
+        }
+    }
